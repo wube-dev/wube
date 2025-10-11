@@ -1,0 +1,75 @@
+/* Reset & basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sidebar Hover Effect */
+.nav-link:hover {
+  color: rgb(224, 65, 7) ;
+  transition: color 0.3s ease;
+}
+
+/* Smooth Scroll for Sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Banner Image - make responsive & centered */
+.ban {
+  background-image: url("image/kids.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom text color class */
+.TBG {
+  color: white;
+}
+/* Cursor blinking effect */
+.cursor {
+  display: inline-block;
+  background-color: white;
+  width: 2px;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+
+
+
+.typing {
+  overflow: hidden;
+  /* Hide the overflow for typing effect */
+  white-space: nowrap;
+  /* Keep text in single line */
+  border-right: 3px solid rgb(54, 14, 163);
+  /* Cursor */
+  width: 0;
+  /* Initial width for typing */
+  animation: typing 3s steps(18) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 18ch;
+  }
+
+  /* Number of characters in "Full-Stack Developer" */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
